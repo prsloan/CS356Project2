@@ -37,6 +37,11 @@ public class UserView extends JFrame implements Observer, ActionListener{
 	private JLabel currentlyFollowing = new JLabel("Currently Following :");
 	private JLabel newsLabel = new JLabel(" News Feed :");
 	
+	/**
+	 *  The constructor of the User view will construct a frame that is tied to the input user
+	 *  based.
+	 * @param currentUser
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public UserView(individualUser currentUser){
 		super("User View of " + currentUser.getId());
